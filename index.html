@@ -90,6 +90,21 @@ body{
   
    
 }
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.btn_primary{
+    color: white;
+background-color: #FF0000;
+padding: 17px 20px;
+font-size: 20px;
+font-weight: bold;
+border: 0;
+border-radius: 5px;
+margin-top: 64px;
+}
 nav{
     background-image: url("image/Banner\ Image.png");
     background-repeat: no-repeat;
@@ -238,10 +253,92 @@ padding-left: 50px;
 
     padding-right: 50px;
 }
-
-.sec2{
+.new_color{
     background-color: #ff00001a;
 }
+.sec2{
+
+   
+   justify-items: center;
+   height: 480px;
+   align-content: center;
+}
+.sec2_data{
+    font-size: 28px;
+
+   
+}
+.sec2_data p {
+margin: 0;
+line-height: 50px;
+font-weight: 600; 
+}
+.sec2_data span{
+    color: #FF0000;
+}
+span.place { margin-left:90px;}
+span.date{margin-left:40px;}
+span.time{}
+.sec3{
+    display: flex;
+    gap: 130px ;
+}
+.sec3_data1,.sec3_data2,.sec3_data3{
+ width: 30%;
+}
+.sec3_data1 h4{
+    color: #FF0000;
+    font-weight: 500;
+    list-style: 29px;
+    margin: 0;
+    font-size: 20px;
+}
+.sec3_data1 h3{
+    color: #070211;
+ 
+    list-style: 60px;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sec3_data1 p{
+    color: #07021179;
+ 
+    list-style: 32px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.sec3_data2 img{
+
+    border: 13px solid red;
+    border-radius: 50%;
+    padding: 50px;
+}
+.sec3_data3{
+   
+}
+.sec3_data3 h3{
+
+    font-size: 48px;
+    color: #FF0000;
+    margin:0 ;
+    font-weight: 700;
+    line-height: 58px;
+    margin: 0;
+}
+.sec3_data3 p{
+
+    font-size: 18px;
+    color: #07021179;
+
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    letter-spacing: 0%;
+}
+.sec3_data3 img{}
 </style>
 
 </head>
@@ -286,16 +383,37 @@ padding-left: 50px;
 
 </section>
 
+<div class="new_color">
 <section class="sec2">
-    <div class="sec2_data">
-        <p>Place: New Park Hotel</p>
-        <p>Date: 31 December Night 2023</p>
-        <p>Time: Evening 7.30 pm to 12.30 am</p>
+    <div class="sec2_data inter">
+        <p><span class="place">Place:</span> New Park Hotel</p>
+           <p><span class="date">Date:</span>  31 December Night 2023</p>
+        <p><span class="time">Time:</span>  Evening 7.30 pm to 12.30 am</p>
+
     </div>
+    <button class="btn_primary inter"> Join Now</button>
 </section>
 
+<section class="sec3 inter">
+<div class="sec3_data1">
+<h4>NEW BEST OFFER</h4>
+<h3 class="merriweather-black">Coming Soon</h3>
+<p>Dolor sit amet consectetur. Consequat eget consectetur maecenas sed molestie malesuada. Ipsum sed sodales risus ut pellentesque vel euismod. 
+</p>
+</div>
+<div class="sec3_data2">
+<img src="image/Ellipse 1.png" alt="" class="">
+</div>
+<div class="sec3_data3 inter">
+<h3 class="">2024</h3>
+<p>Dolor sit amet consectetur. Consequat eget consectetur maecenas sed.</p>
+<img src="image/Group 96.png" alt="">
+</div>
+</section>
+</div>
 </main>
 </div>
+
 
 </body>
 </html>
