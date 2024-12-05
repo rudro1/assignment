@@ -88,6 +88,7 @@ body{
     background-repeat: repeat-y repeat-x;
    background-position: center;
   
+  
    
 }
 section{
@@ -110,14 +111,27 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
-    filter: blur(3px);
-    filter: brightness(60%);
+    
     text-align: center;
      position:relative; 
     color: white;
+ 
    
-    opacity:1 ;
+
     width: 1320px;
+   
+
+}
+
+nav::before{
+    content: '';
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #070211f2, #070211c4, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .heading_nav{width: 50%;
     position: absolute;
@@ -125,7 +139,7 @@ nav{
     left: 25%;
     margin: auto 0;
 text-align: center;
-
+z-index: 2;
    
 }
 .heading_nav p{
@@ -217,7 +231,18 @@ width:100%
 
 filter: grayscale(10%);
 
-    
+    position: relative;
+}
+
+.sec1::before{
+    content: '';
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to right, #070211, #07021138, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .sec1_data{
     width: 50%;
@@ -252,6 +277,7 @@ padding-left: 50px;
     width:30% ;
 
     padding-right: 50px;
+    z-index: 4;
 }
 .new_color{
     background-color: #ff00001a;
@@ -339,6 +365,61 @@ span.time{}
     letter-spacing: 0%;
 }
 .sec3_data3 img{}
+
+.sec4_data1{
+    text-align: center;
+    width: 50%;
+justify-self: center;
+
+}
+.sec4_data1 h5{
+
+}
+
+.sec4_data2{
+    display: flex;
+    margin: 0;
+
+}
+.grp2{
+   position: relative;
+}
+.grp2::after{
+content: '';
+width: 65%;
+height: 100%;
+position: absolute;
+left: -40%;
+top: 0;
+background-image: url("image/Group\ 44.png");
+background-repeat: no-repeat;
+background-position: left center ;
+margin: 0;
+}
+.sec4_data3{
+
+
+}
+.grp3 {
+    position: relative;
+    z-index: 1;
+}
+.grp3 img{
+    z-index: 1;
+    display: block; 
+    width: 50%;
+}
+.grp3::before{
+    content: " ";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    background-image: url("image/Group\ 75.png");
+    background-position: top;
+    background-repeat:no-repeat;
+    z-index: 2;
+}
 </style>
 
 </head>
@@ -371,7 +452,7 @@ span.time{}
 <main>
 
 <section class="sec1 " id="">
-    <div id="overlay"></div>
+    <div id=""></div>
     <div class="sec1_data  ">
 <h1 class="merriweather-bold">Welcome to midnight party</h1>
 <p>Dolor sit amet consectetur. Consequat eget consectetur maecenas sed molestie malesuada. Ipsum sed sodales risus ut pellentesque vel euismod. </p>
@@ -408,6 +489,29 @@ span.time{}
 <h3 class="">2024</h3>
 <p>Dolor sit amet consectetur. Consequat eget consectetur maecenas sed.</p>
 <img src="image/Group 96.png" alt="">
+</div>
+</section>
+<section class="sec4 ">
+<div class="sec4_data1">
+<h5>WHAT IS FUNCTIONAL</h5>
+<h1>Holidays Sale 50%</h1>
+<p>Dolor sit amet consectetur. Consequat eget consectetur maecenas sed 
+    molestie malesuada. Ipsum sed sodales risus ut pellentesque vel euismod. Eleifend nunc purus quam id fermentum amet amet sit consectetur.</p>
+</div>
+
+<div class="sec4_data2">
+
+    <div style="width: 75%;"></div>
+    <div class="grp2">
+        <img src="image/Rectangle 1.png" alt=""  class="grp1">
+      
+       
+     
+    </div>
+</div>
+<div class="sec4_data3 grp3">
+   
+    <img src="image/Rectangle 2.png" alt="" class="">
 </div>
 </section>
 </div>
